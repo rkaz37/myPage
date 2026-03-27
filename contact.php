@@ -44,7 +44,7 @@ include 'template/header.php';
                                         </div>
                                     </div>
                                     <div class="col-lg-6">                 
-                                        <input name="first-name" type="text" id="first-name" placeholder="First Name*" required="">               
+                                        <input name="name" type="text" id="name" placeholder="First Name*" required="">               
                                     </div>
                                     <div class="col-lg-6">                
                                         <input name="last-name" type="text" id="last-name" placeholder="Last Name*" required="">                           
@@ -59,8 +59,9 @@ include 'template/header.php';
                                         <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>                          
                                     </div>
                                     <div class="col-lg-12">
-                                        <button type="submit" id="form-submit" class="main-button ">Send Message</button>                            
+                                        <button type="submit" id="form-submit" class="main-button " onclick="<?php saveMessage(); ?>" >Send Message</button>                            
                                     </div>
+
                                 </div>
                             </form>
                         </div>
